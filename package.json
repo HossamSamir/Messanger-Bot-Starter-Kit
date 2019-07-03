@@ -4,11 +4,15 @@
   "description": "a simple starter kit to start your way in building awesome chatbots",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Hossam Samir",
   "license": "MIT",
   "dependencies": {
-    "messenger-bot": "^2.4.0"
-  }
+    "messenger-bot": "^2.4.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
